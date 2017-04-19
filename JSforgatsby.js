@@ -3,8 +3,12 @@ function main (){
 
     $('.vote').hide();
   $('.vote-button').on('click', function() {
-    $('.vote').toggle();
+    $('.vote').slideToggle();
 $(this).toggleClass('table');
   });
+
+$(this).text('NOW GATSBY IS YOUR RULER');
+
 }
+
 
