@@ -72,14 +72,16 @@ font-weight: bold;
 
 <script>
 function main (){
-  $('.table').fadeIn(1000);
+  $('.vote-reasons').fadeIn(1000);
 
     $('.vote').hide();
-  $('.vote-button').on('click', function() {
+  $('.vote-button').click(function() {
     $('.vote').toggle();
-$(this).toggleClass('table');
+$(this).toggleClass('voted');
   });
 }
+	
+	$(main);
   </script>
 
 </head>
@@ -115,12 +117,8 @@ $(this).toggleClass('table');
       <li> An end to the tyranny of cats </li>
       <li> Authoritarian rule and press censorship </li>
    </ul>
-   
-   <div>
-     <button>Press Me</button>
-   </div>
 
-<div class='vote-button'>How should you vote?</div>
+<button class='vote-button'>How should you vote?</button>
 
  <p class='vote'>
 
